@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 110vh;
+    background-image: url('/assets/img/background1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* HEADER*/
+header {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    position: fixed;
+}
+
+header.navbar-container {
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.5s ease;
+}
+
+header.navbar-container.scroll {
+    background-color: red;
+}
+
+.logo {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo a img {
+    width: 100%;
+    max-width: 200px;
+    margin: 15px;
+}
+
+.nav-list {
+    margin-right: 90px;
+}
+
+.nav-list ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-list ul li {
+    font-size: 1.1em;
+    margin-left: 40px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #2D2D3B;
+    font-weight: bolder;
+}
+
+.nav-list li a:hover {
+    color: #fb0404;
+    border: #fb0404 solid 3px;
+    border-radius: 50px;
+    padding: 10px;
+    background: #fff;
+}
+
+/*MAIN*/
+main section.home {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+main .home .home-kiri {
+    width: 400px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+main .home .home-kiri h2 {
+    font-size: 5em;
+    line-height: 1.5em;
+    font-weight: 900;
+}
+
+main .home .home-kiri h2 span {
+    color: #fb0404;
+}
+
+main .home .home-kiri h2 span:hover {
+    text-shadow: 3px 3px 1px #ccc;
+    font-size: 100px;
+}
+
+main .home .home-kanan {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+main .home .home-kanan img {
+    width: 400px;
+    height: 400px;
+}
+
+main .content {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Quicksand', sans-serif;
+}
+
+main .content .kiri {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main .content .kiri article {
+    margin: 35px;
+}
+
+main .content .kiri article h3 {
+    font-size: 30px;
+}
+
+main .content .kanan aside {
+    display: flex;
+    flex-direction: column;
+}
+
+main .content .kanan {
+    margin-right: 5px;
+}
+
+main .content .kanan img {
+    width: 250px;
+    border-radius: 100%;
+}
+
+main .content .kanan h3 {
+    text-align: center;
+}
+
+/*FOOTER*/
+footer {
+    font-family: 'Montserrat', sans-serif;
+    background-color: red;
+    text-align: center;
+    opacity: 0.9;
+    height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .footer-isi {
+    margin: 40px;
+}
